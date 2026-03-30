@@ -1,6 +1,6 @@
 # Git Local 1 (Fundamentos SW)
 
-Este es un repositorio local utilizado para sincronizar proyectos y tareas del séptimo semestre.
+Este es un repositorio local utilizado para sincronizar proyectos y tareas del séptimo semestre y realizar pruebas de temas variados.
 
 ## 🚀 Proyectos en este Repositorio:
 
