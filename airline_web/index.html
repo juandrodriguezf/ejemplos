@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh Airlines - Vuela Alto</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #fbbf24;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.7)), 
+                        url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-box {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: -80px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            color: var(--text);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .btn-search {
+            background-color: var(--secondary);
+            color: var(--primary);
+            border: none;
+            padding: 1rem;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-search:hover {
+            background-color: #f59e0b;
+            transform: translateY(-2px);
+        }
+
+        .destinations {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .price {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">✈️ SkyHigh Airlines</div>
+            <div>Buscador | Mis Viajes | Ayuda</div>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Tu Próximo Destino Comienza Aquí</h1>
+        <p>Vuela con la aerolínea más premiada del continente.</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="search-box">
+        <div>
+            <label>Origen</label>
+            <input type="text" placeholder="Ciudad de Origen">
+        </div>
+        <div>
+            <label>Destino</label>
+            <input type="text" placeholder="Ciudad de Destino">
+        </div>
+        <div>
+            <label>Fecha</label>
+            <input type="date">
+        </div>
+        <button class="btn-search">BUSCAR VUELOS</button>
+    </div>
+</div>
+
+<section class="destinations container">
+    <h2>Promociones Estrella</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=400" alt="Dubai">
+            <div class="card-content">
+                <h3>Dubai</h3>
+                <p>Descubre el lujo del desierto.</p>
+                <span class="price">Desde $899 USD</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=400" alt="Paris">
+            <div class="card-content">
+                <h3>París</h3>
+                <p>La ciudad del amor te espera.</p>
+                <span class="price">Desde $650 USD</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&q=80&w=400" alt="Tokyo">
+            <div class="card-content">
+                <h3>Tokyo</h3>
+                <p>Tradición y futuro unidos.</p>
+                <span class="price">Desde $1,100 USD</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="background: #1e293b; color: white; padding: 3rem 0; margin-top: 100px; text-align: center;">
+    <p>© 2026 SkyHigh Airlines. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
