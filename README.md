@@ -1,6 +1,6 @@
-# Git Local 1 (Fundamentos SW)
+# Laboratorio de Pruebas Variadas (Testing Ground)
 
-Este es un repositorio local utilizado para sincronizar proyectos y tareas del séptimo semestre y realizar pruebas de temas variados.
+Este es un repositorio personal utilizado como campo de pruebas y área de experimentación para prototipos rápidos, nuevas tecnologías y diversos lenguajes de programación.
 
 ## 🚀 Proyectos en este Repositorio:
 
