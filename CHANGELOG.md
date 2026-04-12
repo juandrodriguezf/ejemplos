@@ -2,6 +2,11 @@
 
 Este archivo registra todos los cambios notables realizados en el proyecto.
 
+## [1.2.0] - 2026-04-10
+### Añadido
+- **`calculator.py`**: Función de multiplicación (`multiply`).
+- **`calculator.py`**: Interfaz interactiva para solicitar números al usuario.
+
 ## [1.1.0] - 2026-03-31
 ### Añadido
 - **`data_structures.py`**: Ejemplos completos de Listas, Diccionarios, Tuplas y Sets.
